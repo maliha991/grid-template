@@ -49,18 +49,19 @@ button {
 
 .card-list {
 	display: flex;
+	overflow-x: scroll;
 }
 
-*::-webkit-scrollbar {
+.card-list::-webkit-scrollbar {
 	width: 448px;
 	height: 3px;
 }
 
-*::-webkit-scrollbar-track {
-	background: transparent;
+.card-list::-webkit-scrollbar-track {
+	background: #cdd1d5;
 }
 
-*::-webkit-scrollbar-thumb {
+.card-list::-webkit-scrollbar-thumb {
 	background-color: #007882;
 	border: transparent;
 }
@@ -77,5 +78,6 @@ button {
 	.card-list {
 		justify-content: center;
 		flex-wrap: wrap;
+		overflow: hidden;
 	}
 }
