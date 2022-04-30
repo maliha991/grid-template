@@ -52,7 +52,7 @@
 	background: #ffffff;
 }
 
-@media screen and (max-width: 932px) {
+@media screen and (max-width: 1279px) {
 	.pages,
 	#login {
 		font-size: 12px;

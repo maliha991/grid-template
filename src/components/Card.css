@@ -1,5 +1,5 @@
 .card-container {
-	width: 340px;
+	min-width: 340px;
 	height: 422px;
 	display: flex;
 	flex-direction: column;
@@ -75,12 +75,17 @@
 	vertical-align: middle;
 }
 
-@media screen and (max-width: 932px) {
+@media screen and (max-width: 1279px) {
 	.info h3 {
 		display: block;
 	}
 
 	.info {
 		text-align: center;
+	}
+
+	.card-container {
+		width: 340px;
+		min-width: 0%;
 	}
 }

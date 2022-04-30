@@ -66,7 +66,7 @@ button {
 	border: transparent;
 }
 
-@media screen and (max-width: 932px) {
+@media screen and (max-width: 1279px) {
 	html {
 		font-size: 45%;
 	}
