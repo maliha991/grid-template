@@ -11,10 +11,57 @@ html {
 
 body {
 	font-family: "Jost", sans-serif;
-	background: #ececec;
+	background: #fafafa;
+}
+
+button {
+	border: none;
+	background: none;
 }
 
 .container {
-	min-height: 100vh;
+	min-height: 70vh;
 	margin: 2rem 4rem 0 4rem;
+}
+
+.grid-container {
+	margin: 5rem 1rem 3rem 2rem;
+}
+
+.grid-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.grid-title h2 {
+	color: #110229;
+	font-size: 32px;
+	font-weight: 500;
+	margin-right: auto;
+}
+
+.show-all-btn {
+	font-size: 16px;
+	color: #007882;
+	font-weight: 500;
+}
+
+.card-list {
+	display: flex;
+}
+
+@media screen and (max-width: 932px) {
+	html {
+		font-size: 45%;
+	}
+
+	.grid-title h2 {
+		font-size: 20px;
+	}
+
+	.card-list {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 }
