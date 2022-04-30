@@ -51,6 +51,20 @@ button {
 	display: flex;
 }
 
+*::-webkit-scrollbar {
+	width: 448px;
+	height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #007882;
+	border: transparent;
+}
+
 @media screen and (max-width: 932px) {
 	html {
 		font-size: 45%;
