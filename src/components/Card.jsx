@@ -1,6 +1,7 @@
 import React from "react";
+import { AiOutlineHeart } from "react-icons/ai";
 
-import apartment from "../images/harold-wainwright-HfMqFSgrQmw-unsplash.jpg";
+import apartment from "../images/pexels-lilartsy-3016321.jpg";
 import bath from "../images/bath.png";
 import bed from "../images/bed (1) 1.png";
 import fullScreen from "../images/full-screen 1.png";
@@ -11,11 +12,15 @@ const Card = ({ status }) => {
 	return (
 		<div className="card-container">
 			<img className="apartment" src={apartment} alt="apartment" />
+			<div className="heart-container">
+				<AiOutlineHeart className="heart" />
+			</div>
 			<h2 className="address">5300 Lakeside, Newyork</h2>
 
 			<div className="buy-rate">
-				<button>For Buy</button>
+				<button> {status ? "For Buy" : "For Rent"} </button>
 				<h2>$14,500</h2>
+				{!status && <h3>$16,500</h3>}
 			</div>
 
 			<div className="info">

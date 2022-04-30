@@ -45,6 +45,7 @@ button {
 	font-size: 16px;
 	color: #007882;
 	font-weight: 500;
+	cursor: pointer;
 }
 
 .card-list {
