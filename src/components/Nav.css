@@ -9,6 +9,7 @@
 	justify-content: space-around;
 	width: 149.69px;
 	height: 24px;
+	margin-right: auto;
 }
 
 .logo h1 {
@@ -16,7 +17,8 @@
 	color: #007882;
 }
 
-button {
+.pages {
+	margin-right: 5rem;
 	border: none;
 	font-size: 16px;
 	color: #110229;
@@ -26,18 +28,9 @@ button {
 	transition: all 0.25s ease;
 }
 
-.pages {
-	margin-right: 5rem;
-}
-
-.pages:hover {
-	background: #007882;
-	color: white;
-	padding: 1.2rem 3.5rem;
-	border-radius: 500px;
-}
-
 #login {
+	font-size: 16px;
+	font-weight: bold;
 	margin-left: 2rem;
 	margin-right: 3rem;
 	padding: 1.2rem 3.5rem;
@@ -57,4 +50,25 @@ button {
 	width: 4rem;
 	border-radius: 50%;
 	background: #ffffff;
+}
+
+@media screen and (max-width: 932px) {
+	.pages,
+	#login {
+		font-size: 12px;
+	}
+
+	.nav-bar {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.buttons {
+		margin-top: 2rem;
+		display: flex;
+		order: 3;
+	}
 }

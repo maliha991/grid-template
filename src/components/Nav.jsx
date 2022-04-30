@@ -18,12 +18,14 @@ const Nav = () => {
 				<button className="pages">Properties</button>
 				<button className="pages">Agents</button>
 				<button className="pages">Blog</button>
+			</div>
 
+			<div className="menu">
 				<button id="login">Login</button>
 				<button id="hamburger">
 					<GiHamburgerMenu
 						style={{
-							"font-size": "2rem",
+							"font-size": "1.8rem",
 							color: "#007882",
 							"vertical-align": "middle",
 						}}
