@@ -53,7 +53,6 @@ button {
 }
 
 .card-list::-webkit-scrollbar {
-	width: 448px;
 	height: 3px;
 }
 
