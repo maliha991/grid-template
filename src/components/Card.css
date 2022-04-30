@@ -37,6 +37,32 @@
 	font-size: 2rem;
 }
 
+.carousel {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.8);
+	margin: 0rem 5px;
+}
+
+.active-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #ffffff;
+	margin: 0 5px;
+}
+
 .address,
 .buy-rate,
 .info {
