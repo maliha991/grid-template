@@ -7,7 +7,37 @@ import Card from "./components/Card";
 import "./app.css";
 
 function App() {
-	const apartmentBuyingStatus = [true, false, true, false, true, true, true];
+	const apartmentStatus = [
+		{
+			buy: true,
+			isFavourite: false,
+		},
+		{
+			buy: false,
+			isFavourite: false,
+		},
+		{
+			buy: true,
+			isFavourite: false,
+		},
+		{
+			buy: false,
+			isFavourite: false,
+		},
+		{
+			buy: true,
+			isFavourite: false,
+		},
+		{
+			buy: true,
+			isFavourite: false,
+		},
+		{
+			buy: false,
+			isFavourite: false,
+		},
+	];
+
 	return (
 		<div className="container">
 			<Nav />
@@ -25,8 +55,8 @@ function App() {
 				</div>
 
 				<div className="card-list">
-					{apartmentBuyingStatus.map((status) => (
-						<Card status={status} />
+					{apartmentStatus.map(({ buy, isFavourite }, index) => (
+						<Card key={++index} buy={buy} isFavourite={isFavourite} />
 					))}
 				</div>
 			</div>

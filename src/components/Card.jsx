@@ -12,10 +12,11 @@ import fullScreen from "../images/full-screen 1.png";
 
 import "./Card.css";
 
-const Card = ({ status }) => {
+const Card = ({ buy, isFavourite }) => {
 	const images = [apartment1, apartment2, apartment3, apartment4, apartment5];
 	const [activeImageIndex, setActiveImageIndex] = useState(0);
 	const [activeImage, setActiveImage] = useState(images[activeImageIndex]);
+	const [favourite, setFavourite] = useState(isFavourite);
 
 	useEffect(() => {
 		setActiveImage(images[activeImageIndex]);
@@ -26,12 +27,24 @@ const Card = ({ status }) => {
 		3000
 	);
 
+	useEffect(() => {
+		isFavourite = favourite;
+	}, [favourite]);
+
 	return (
 		<div className="card-container">
 			<img className="apartment" src={activeImage} alt="apartment" />
 
-			<div className="heart-container">
-				<AiOutlineHeart className="heart" />
+			<div
+				onClick={() => setFavourite(!isFavourite)}
+				className="heart-container"
+			>
+				<AiOutlineHeart
+					style={{
+						color: favourite ? "#D35D5D" : "#ffffff",
+						"font-size": "2rem",
+					}}
+				/>
 			</div>
 
 			<div className="carousel">
@@ -45,9 +58,9 @@ const Card = ({ status }) => {
 			<h2 className="address">5300 Lakeside, Newyork</h2>
 
 			<div className="buy-rate">
-				<button> {status ? "For Buy" : "For Rent"} </button>
+				<button> {buy ? "For Buy" : "For Rent"} </button>
 				<h2>$14,500</h2>
-				{!status && <h3>$16,500</h3>}
+				{!buy && <h3>$16,500</h3>}
 			</div>
 
 			<div className="info">

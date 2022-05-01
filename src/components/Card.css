@@ -32,10 +32,14 @@
 	cursor: pointer;
 }
 
-.heart {
+/* .heart {
 	color: #ffffff;
 	font-size: 2rem;
 }
+
+.favourite {
+	color: #e26363;
+} */
 
 .carousel {
 	position: absolute;
